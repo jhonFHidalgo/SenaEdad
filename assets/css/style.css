@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/01.jpg);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    opacity: 2;
+   
+}
+
+
+
+.container {
+    background-color: rgba(0,0,0,0.4);
+    padding: 40px;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;    
+} 
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+input {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #014083;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: #333;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Media Queries para tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 1025px) {
+    .container {
+        width: 50%;
+        padding: 25px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+        margin-top: 30px;
+    }
+
+    #result {
+        font-size: 20px;
+    }
+}
